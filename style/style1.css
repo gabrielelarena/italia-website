@@ -1,0 +1,145 @@
+/*configurações do carrossel*/
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 40rem;
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.img1 {
+  height: 140%;
+  width: 100%;
+}
+
+/*configurações do design da página*/
+
+h1 {
+  font-family: 'Britannic Bold';
+  font-size: 100px;
+  color: #a50019;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'verdana';
+  font-size: 17px;
+  color: #f08d36;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*configuração das fotos com links*/
+
+.container {
+  width: 1200px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+@media screen and (max-width: 668px) {
+  .container {
+    display: block;
+  }
+}
+
+.container .card {
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+
+.container .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+  border-radius: 18px;
+}
+
+.container .card .face.face1 {
+  position: relative;
+  background: #025939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+}
+
+.container .card:hover .face.face1 {
+  background-color: #f29c50;
+  transform: translateY(0);
+}
+
+.container .card .face.face1 .content {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.container .card .face.face1 .content img {
+  max-width: 300px;
+  max-height: 170px;
+}
+
+.container .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.container .card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2 {
+  transform: translateY(0);
+}
+
+.container .card .face.face2 .content a {
+  display: inline-block;
+  margin-left: 2cm;
+  text-decoration: none;
+  font-weight: 900;
+  color: #000000;
+  padding: 5px;
+  border: 1px solid #000000;
+  transition: 0.4s;
+}
+
+.container .card .face.face2 .content a:hover {
+  border-radius: 10px;
+  background: #e82020;
+  color: #fff;
+}
+
+p {
+  font-family: 'verdana';
+  font-size: 17px;
+  color: #000;
+}
